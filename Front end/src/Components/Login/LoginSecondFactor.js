@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Form, Button } from "react-bootstrap";
 import { Container, Row, Col } from "react-bootstrap";
-import { auth } from "../../backend/firebase";
+import { auth, firestore } from "../../backend/firebase";
 import axios from "axios";
 
 const LoginSecondFactor = ({ history, location }) => {

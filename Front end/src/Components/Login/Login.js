@@ -61,12 +61,13 @@ const Login = ({ history }) => {
             `https://dhrzvmfzw6.execute-api.us-east-1.amazonaws.com/dev/question?uid=${userid}`
           );
           setLoading(false);
+          const pass = password;
           history.push({
             pathname: "/loginsecondfactor",
             state: {
               uid: userResponse.data.uid,
               email,
-              password,
+              password: pass,
               question: response.data.body,
             },
           });
@@ -74,7 +75,7 @@ const Login = ({ history }) => {
       }
     } else {
       setLoading(false);
-      setError("Email not registered");
+      setError("Email not registered. Please check the email");
       return false;
     }
   };
