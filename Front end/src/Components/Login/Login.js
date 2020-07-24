@@ -133,10 +133,10 @@ const Login = ({ history }) => {
                 )}
                 Submit
               </Button>
-              <NavLink to="/register" className="link">
-                <p>Doesn't have an account? Sign Up here.</p>
-              </NavLink>
             </Form>
+            <NavLink to="/register" className="link">
+              <p>Doesn't have an account? Sign Up here.</p>
+            </NavLink>
           </Col>
         </Row>
       </Container>

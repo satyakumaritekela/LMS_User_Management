@@ -7,7 +7,6 @@ import Login from "./Components/Login/Login";
 import Register from "./Components/Register/Register";
 import { AuthProvider } from "./Context/auth";
 import PrivateRoute from "./Routes/PrivateRoute";
-import SecondFactor from "./Components/Register/SecondFactor";
 import LoginSecondFactor from "./Components/Login/LoginSecondFactor";
 
 function App() {
@@ -19,7 +18,6 @@ function App() {
           <PrivateRoute exact path="/home" component={Home} />
           <Route exact path="/login" component={Login} />
           <Route exact path="/register" component={Register} />
-          <Route exact path="/secondfactor" component={SecondFactor} />
           <Route
             exact
             path="/loginsecondfactor"
